@@ -1,21 +1,3 @@
-# General Dev
-
-1. ## What is HTTP and HTTPS?
-   ### Answer:
-   Both are comunication protocols over the internet.
-   used as request and response for transfering data.
-   can talk about status codes, headers , types of data.
-   ### missing https!!!
-2. ## What is Cors?
-
-   ### Answer:
-
-   polocy to allow the server to accept the request that coming or prevent from other origins
-
-   example: preventing a website sharing resorces between other endpoints (prevent a server hit your computer)
-
-   ### missing info!!!!
-
 # HTML / CSS
 
 1.  ## What is block and inline elements?
@@ -34,22 +16,10 @@
 
     ```html
     block elements:
-    <div>
-      ,
-      <h1>
-        ,
-        <canvas
-          >,
-          <nav>
-            inline elements:
-            <span
-              >,
-              <button>
-                , <a>, <img /></a></button
-            ></span></nav
-        ></canvas>
-      </h1>
-    </div>
+    <div>, <h1>, <canvas>, <nav>
+    
+    inline elements:
+    <span>, <button>, <a>, <img/>
     ```
 
 2.  ## How does specificity work in CSS?
@@ -63,22 +33,21 @@
     <br>
 
     ### Example:
-
-    ```html
     html:
+    ```html
 
     <div class="box" id="main-container">example</div>
     ```
+    css:
 
-    ```css
-    css: .box {
+    ```css 
+    .box {
       background-color: blue;
     }
     #main-container {
       background-color: red;
     }
     ```
-
     The background color will be set to red.
 
 3.  ## Why don’t we use IDs for all our selectors?
@@ -208,21 +177,51 @@ pitfalls: closure in a loop ,
 ### Example:
 
 10. ## What is a promise? How is it different from callback?
+
 ### Answer:
+
 Its !!!!!
-3 states: pending fullfil reject. can use for 
+3 states: pending fullfil reject. can use for
 
 callback hell: using callback functions one by one for many times we can use promises to avoid that, also can use async await. (or generator function??)
 
+
 11. ## How can you share code between files?
+### Answer:
+### Example:
+
 12. ## What are the differences between variables created using ​let​, ​var​ and ​const​?
+### Answer:
+### Example:
+
 13. ## Should we always use Async/Await?
+### Answer:
+### Example:
+
 14. ## What is DOM?
+### Answer:
+### Example:
+
 15. ## What are some differences between JS and JSON?
+### Answer:
+### Example:
+
 16. ## Difference between Stack and Queue?
+### Answer:
+### Example:
+
 17. ## If all the operations of an object are O(1), why do we ever use an array?
+### Answer:
+### Example:
+
 18. ## How does binary search work?
+### Answer:
+### Example:
+
 19. ## What is an arrow function? What is the major use of it?
+### Answer:
+### Example:
+
 20. ## What is prototype in JS?
 
 ### Answer:
@@ -246,8 +245,15 @@ Person.prototype.name = function () {
 };
 ```
 
+
 21. ## Explain "hoisting"
+### Answer:
+### Example:
+
 22. ## What is event loop in NodeJS?
+### Answer:
+### Example:
+
 23. ## What is the difference between ​==​ and ​===​?
 
 ### Answer:
@@ -296,7 +302,149 @@ NaN === NaN; //false
 ```
 
 26. ## How node.js handle childe threads ?
+
 ### Answer:
-event loop. 
+
+event loop.
 what is tipcly the first argument to pass to nodejs callback handler? ERROR
 because uncaught exceptions.
+
+
+# General Web Dev
+
+1. ## What is HTTP and HTTPS?
+   ### Answer:
+   Both are communication protocols over the internet.
+   used as a request - response to transfer data.
+   HTTP is unsecured, while HTTPS is secured.
+   HTTPS use SSL encryption for secured communication.
+   can talk about status codes (200, 400), headers , types of data(json).
+2. ## What is Cors?
+
+   ### Answer:
+
+   polocy to allow the server to accept the request that coming or prevent from other origins
+
+   example: preventing a website sharing resorces between other endpoints (prevent a server hit your computer)
+
+   ## missing info!!!!
+
+
+3. ## What is Node?
+### Answer:
+### Example:
+
+4. ## What is NPM?
+### Answer:
+### Example:
+
+5. ## Name all the HTTP methods/verbs
+### Answer:
+### Example:
+
+6. ## What is the major difference between GET and POST?
+### Answer:
+### Example:
+
+7. ## Why do we need PUT and DELETE methods?
+### Answer:
+### Example:
+
+8. ## What is express? 
+### Answer:
+### Example:
+
+# Data bases General
+
+
+1. ## What kind of databases you know?
+### Answer:
+### Example:
+
+2. ## What is the major difference between SQL and No-SQL?
+### Answer:
+### Example:
+
+3. ## What’s the difference between SQL and Mongoose? 
+### Answer:
+### Example:
+
+
+# Data bases MongoDB
+
+
+1. ## What’s the difference between Mongo and Mongoose?
+### Answer:
+### Example:
+
+2. ## When would you use population
+### Answer:
+### Example:
+
+# Data bases SQL
+
+
+1. ## How does SQL handle the concepts of lists/arrays?
+### Answer:
+### Example:
+
+2. ## What is the difference between a Foreign and Primary Key?
+### Answer:
+### Example:
+
+3. ## How can you combine tables in SQL? What are the different Methods 
+### Answer:
+### Example:
+
+# React
+
+1. ## What is React?
+### Answer:
+### Example:
+
+2. ## What is JSX?
+### Answer:
+### Example:
+
+3. ## What is Virtual DOM? Why use it?
+### Answer:
+### Example:
+
+4. ## Explain data flow in React
+### Answer:
+### Example:
+
+5. ## Explain some of the different React LifeCycles, what do we use them for?
+### Answer:
+### Example:
+
+6. ## Do we have to use map to load children components?
+### Answer:
+### Example:
+
+7. ## Why do we separate our code to components?
+### Answer:
+### Example:
+
+8. ## What is the difference between ​props ​and ​state​? 
+### Answer:
+### Example:
+
+# MobX
+
+1. ## What is MobX? Why do we need it?
+### Answer:
+### Example:
+
+2. ## Tell me more about state management, why do we need it for?
+### Answer:
+### Example:
+
+3. ## Why do we need to use @action decorators in MobX
+### Answer:
+### Example:
+
+4. ## How many stores should you create when using MobX? (what is the best practice) 
+### Answer:
+### Example:
+
