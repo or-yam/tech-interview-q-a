@@ -4,11 +4,11 @@
 
     ### Answer:
 
-    block element is an html element that by default starts a new line and takes up the whole width of the screen.
+    block element is an HTML element that by default starts a new line and takes up the whole width of the screen.
     <br>
     inline element continue on the same line and takes up only his content width
     <br>
-    we can use css to force an inline element act as block and otherwise.
+    we can use CSS to force an inline element act as block and otherwise.
     <br>
     elements with inline-block property will not break to the next line and their height and width can be changed.
 
@@ -26,19 +26,18 @@
 
     ### Answer:
 
-    less specific to most specific:
-    html tags => classes => id => inline=> !important
-    <br>
     CSS Specificity is the set of the rules applied to CSS selectors in order to determine which style is applied to an element. The more specific a CSS style is, the higher point value it accrues, and the likelier it is to be present on the element's style.
     <br>
+    less specific to most specific:
+    HTML tag => class => id => inline style => !important
 
     ### Example:
-    html:
+    HTML:
     ```html
 
     <div class="box" id="main-container">example</div>
     ```
-    css:
+    CSS:
 
     ```css 
     .box {
@@ -48,7 +47,7 @@
       background-color: red;
     }
     ```
-    The background color will be set to red.
+    ### The background color will be set to red.
 
 3.  ## Why don’t we use IDs for all our selectors?
 
@@ -64,7 +63,7 @@
 
 5.  ## What are ​data-​attributes good for?
 
-    ### Answer
+    ### Answer:
 
     embed data in html element that can be use later in javascript.
 
@@ -76,8 +75,9 @@
 
     ### Answer:
 
-    check on [Can I Use](https://caniuse.com/) what alternatives I can use for the specific issue and try to implement a solution using this tools
-
+    check on [Can I Use](https://caniuse.com/) what alternatives I can use for the specific issue and try to implement a solution using this tools.
+    another approach is to use `-webkit` prefix in the CSS file.
+---
 # JavaScript
 
 1. ## What is OOP?
@@ -88,18 +88,45 @@
    <br>
    each class has its own variables and methods, what makes it self contained peaces of code (ENCAPSULATION).
    classes can inherent features from other classes(INHERITANCE),
-   classes can act differently each --- (POLYMORPHISM)
+   each instance of a class can act differently  (POLYMORPHISM)
 
-### Example
+   ### Example
+   Person class contains: name, age and adress.
+   ```javascript
+   class Person {
+       constructor(name,age,adress){
+           this.name = name;
+           this.age = age;
+           this.adress = adress;
+       }
+       printName(){
+           console.log(`My name is: ${this.name}`)
+       }
+   }
+
+   const john = new Person('john', 89, 'IL')
+   john.printName() // my name is john
+   ```
 
 2. ## What is polymorphism?
 
 ### Answer
 
 polymorphism is a core concept in OOP.
-it means that an object can act differently each ---
+it means that an object can act differently each instance
 
 ### Example
+```javascript
+class Student extends Person{
+    constructor(name,age,adress,lessons){
+        super(name,age,adress);
+        this.lessons = lessons;
+    }
+    addLesson(newLesson){
+        this.lessons.push(newLesson)
+    }
+}
+```
 
 3. ## Explain MVC, why is it useful?
 
@@ -111,7 +138,7 @@ Model is where the data is stored
 <br>
 Control is where the user interact with the UI
 <br>
-View is the what renders on the screen
+View is what renders on the screen
 
 ### Example
 
