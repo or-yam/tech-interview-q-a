@@ -6,7 +6,7 @@
 
 ### Example:
 
-2. ## What is JSX?
+2.## What is JSX?
 
 ### Answer:
 
@@ -47,6 +47,8 @@
 ### Answer:
 
 ### Example:
+
+9. ## What is the 'key' used in react and what is the problem using the index as key?
 
 # MobX
 
