@@ -167,9 +167,8 @@ you can open sandbox or using github\lab to share your code.
 ### Example:
 
 15. ## What are some differences between JS and JSON?
-
 ### Answer:
-
+in JSON and key and value need to be in "" 
 ### Example:
 
 16. ## Difference between Stack and Queue?
