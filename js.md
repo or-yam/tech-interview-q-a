@@ -145,7 +145,7 @@ callback hell: using callback functions one by one for many times we can use pro
 11. ## How can you share code between files?
 
 ### Answer:
-
+you can open sandbox or using github\lab to share your code.
 ### Example:
 
 12. ## What are the differences between variables created using ​let​, ​var​ and ​const​?
